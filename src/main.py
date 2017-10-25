@@ -41,7 +41,7 @@ def goto():
 	
 	index = (((((room - 1) * 4 + (wall - 1)) * 5 + (shelf - 1)) * 32 + (volume - 1)) * 410 + (page - 1)) % max_index
 	
-	print("Your index is " + str(index))
+	#print("Your index is " + str(index))
 	print("Your text is:\n" + index2text(index))
 
 def search():
@@ -49,11 +49,11 @@ def search():
 	
 	text = pad(text)
 	
-	print("Your search text is " + text)
+	#print("Your search text is " + text)
 	
 	index = text2index(index2text(text2index(text)))
 	
-	print("The index is " + str(index))
+	#print("The index is " + str(index))
 	
 	print("The page is " + str(index % 410 + 1))
 	index //= 410
